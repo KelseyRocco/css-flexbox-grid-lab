@@ -1,0 +1,74 @@
+/*Code is a little all over the place! Grid is complicated but I do like Flexbox :)*/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 40px 40px;
+    max-width: 100%;
+}
+
+/*NAV STYLES*/
+nav {
+    grid-row: 2;
+    grid-column: 1;
+
+    color: lightgrey;
+    width: 20%;
+}
+
+nav img {
+    height: 100px;
+    margin-left: 40px;
+}
+
+
+ul {
+    font-size: 12px;
+    line-height: 25px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.categories {
+    text-transform: uppercase;
+}
+
+
+/*HEADER STYLES*/
+header {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+header img {
+    height: 700px;
+    max-height: 100%;
+}
+
+/*SECTION STYLES*/
+section {
+    display: flex;
+    grid-row: 2;
+    grid-column:2;
+    justify-content: space-between;
+}
+
+section img {
+    height: 500px;
+    max-height: 100%;
+}
+
+/*FOOTER STYLES*/
+footer {
+    display: flex;
+    grid-row: 3;
+    grid-column: 2;
+    justify-content: center;
+}
+
+footer img {
+    margin: -200px 30px;
+    height: 300px;
+    height: 350px;
+}
